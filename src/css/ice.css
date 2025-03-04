@@ -1,4 +1,5 @@
-@import url(variable.css);
+@import url(variables.css);
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,6 @@
 
 body {
     background: url(../storage/img/Rectangle.png);
-    background-color: var(--color-1);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -36,4 +36,293 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.div__logo img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    max-width: 200px;
+}
+
+.div__menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__menu ul {
+    display: flex;
+    gap: 33px;
+}
+
+.div__menu ul li {
+    list-style: none;
+}
+
+.div__menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.div__option {
+    grid-area: opcion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.div__product {
+    grid-area: pre;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.logo {
+    position: absolute;
+    bottom: 235px;
+    left: 70%;
+    transform: translateX(-50%);
+    max-width: 40%;
+}
+
+.div__ice-cream img {
+    position: absolute;
+    object-fit: contain;
+    max-width: 50%;
+}
+
+.div__ice-cream img:nth-child(1) {
+    transform: rotate(32.69deg);
+    width: 447px;
+    height: 753px;
+    z-index: 5;
+    left: -141px;
+    top: -373px;
+}
+
+.div__ice-cream img:nth-child(2) {
+    transform: rotate(57.18deg);
+    width: 447px;
+    height: 832px;
+    z-index: 10;
+    left: -52px;
+    top: -272px;
+}
+
+.div__ice-cream img:nth-child(3) {
+    transform: rotate(85.74deg);
+    z-index: 5;
+    left: 21px;
+    top: 0px;
+}
+
+.div__info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-1);
+    margin-right: 67px;
+    position: relative;
+}
+
+.div__info h1 {
+    font-size: 70px;
+    font-family: "Inter_28pt-Bold";
+    color: var(--color-1);
+}
+
+.div__info span {
+    font-size: 32px;
+    font-family: "Lalezar-Regular";
+    color: var(--color-1);
+}
+
+.div__info p {
+    font-size: 24px;
+    font-family: "Inder-Regular";
+    max-width: 608px;
+}
+
+.bottom__button {
+    align-self: flex-end;
+    margin-right: 12vh;
+}
+
+.btn {
+    background-color: var(--color-3);
+    color: var(--color-2);
+    padding: 19px 34px;
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 91px;
+    display: inline-block;
+    font-family: "Inder-Regular";
+}
+
+
+@media (max-width: 430px) {
+    body {
+        display: grid;
+        background-image: none;
+        overflow: visible;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 95px) 50px 1fr 294px;
+        grid-template-areas: "logo logo logo"
+            "menu menu menu"
+            "opcion opcion opcion"
+            "pre pre pre"
+            "info info info";
+
+    }
+
+    .div__menu {
+        margin-top: 50px;
+        grid-area: menu;
+    }
+
+    .div__menu ul {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+    .div__menu ul>li {
+        flex: 1;
+    }
+
+    .div__menu ul li a {
+        text-align: center;
+        display: block;
+        width: 150px;
+        border-radius: 10px;
+        border: 5px solid var(--color-1);
+        outline: 2px solid white;
+        padding: 5px;
+        background-color: var(--color-4);
+    }
+
+    .div__product {
+        padding-top: 0;
+        grid-area: pre;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: violet;
+        width: 100%;
+
+    }
+
+    .logo {
+        position: absolute;
+        left: 37%;
+        top: -70px;
+        right: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    .div__ice-cream {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 100vh;
+    }
+
+    .div__ice-cream img:nth-child(1),
+    .div__ice-cream img:nth-child(2),
+    .div__ice-cream img:nth-child(3) {
+        transform: rotate(0deg);
+        position: absolute;
+        overflow: hidden;
+        height: 500px;
+        object-fit: contain;
+        inset: 0;
+        margin: 30px auto;
+        z-index: -10;
+    }
+
+    .div__ice-cream img:nth-child(1) {
+        transform: rotate(19deg);
+        width: 514px;
+        height: 500px;
+        z-index: 5;
+        left: -142px;
+        top: -186px;
+    }
+
+    .div__ice-cream img:nth-child(2) {
+        transform: rotate(19deg);
+        width: 514px;
+        height: 500px;
+        z-index: 10;
+        left: 0px;
+        top: -190px;
+    }
+
+    .div__ice-cream img:nth-child(3) {
+        transform: rotate(19deg);
+        width: 514px;
+        height: 500px;
+        z-index: 5;
+        left: 142px;
+        top: -186px;
+    }
+
+    .div__info {
+        grid-area: info;
+        margin-top: 700px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 750px;
+        margin: 5%;
+    }
+
+    .div__info h1,
+    .div__info span,
+    .div__info p {
+        color: #fff;
+    }
+
+    .div__info h1 {
+        font-size: 50px;
+        font-family: "Inter_28pt-Bold";
+    }
+
+    .div__info span {
+        font-size: 32px;
+        font-family: "Lalezar-Regular";
+
+    }
+
+    .div__info p {
+        font-size: 24px;
+        font-family: "Inder-Regular";
+    }
+
+    .div__info a {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .bottom__button {
+        align-self: center;
+        margin-top: 25px;
+        padding-left: 25%;
+    }
 }
