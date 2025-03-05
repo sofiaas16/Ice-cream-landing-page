@@ -31,43 +31,73 @@ main {
     display: contents;
 }
 
-.div__logo {
+.FLAVOR {
+    position: absolute;
+    text-align: center;
+    margin-top: -65%;
+    margin-left: 45%;
+    line-height: 45px;
+}
+
+.FLAVOR p {
+    font-family: "seaweed";
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.FLAVOR h1 {
+    font-family: "lalezar";
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.FLAVOR h3 {
+    font-family: "lalezar";
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: normal;
+
+}
+
+.logo {
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.div__logo img {
+.logo img {
     width: 50%;
     height: auto;
     object-fit: contain;
     max-width: 200px;
 }
 
-.div__menu {
+.menu {
     grid-area: menu;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.div__menu ul {
+.menu ul {
     display: flex;
     gap: 33px;
 }
 
-.div__menu ul li {
+.menu ul li {
     list-style: none;
 }
 
-.div__menu ul li a {
+.menu ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 28px;
 }
 
-.div__option {
+.option {
     grid-area: opcion;
     display: flex;
     justify-content: center;
@@ -75,7 +105,7 @@ main {
     gap: 32px;
 }
 
-.div__product {
+.product {
     grid-area: pre;
     display: flex;
     flex-direction: column;
@@ -94,13 +124,13 @@ main {
     max-width: 40%;
 }
 
-.div__ice-cream img {
+.ice-cream img {
     position: absolute;
     object-fit: contain;
     max-width: 50%;
 }
 
-.div__ice-cream img:nth-child(1) {
+.ice-cream img:nth-child(1) {
     transform: rotate(32.69deg);
     width: 447px;
     height: 753px;
@@ -109,7 +139,7 @@ main {
     top: -373px;
 }
 
-.div__ice-cream img:nth-child(2) {
+.ice-cream img:nth-child(2) {
     transform: rotate(57.18deg);
     width: 447px;
     height: 832px;
@@ -118,14 +148,14 @@ main {
     top: -272px;
 }
 
-.div__ice-cream img:nth-child(3) {
+.ice-cream img:nth-child(3) {
     transform: rotate(85.74deg);
     z-index: 5;
     left: 21px;
     top: 0px;
 }
 
-.div__info {
+.info {
     grid-area: info;
     display: flex;
     flex-direction: column;
@@ -136,19 +166,19 @@ main {
     position: relative;
 }
 
-.div__info h1 {
+.info h1 {
     font-size: 70px;
     font-family: "Inter_28pt-Bold";
     color: var(--color-1);
 }
 
-.div__info span {
+.info span {
     font-size: 32px;
     font-family: "Lalezar-Regular";
     color: var(--color-1);
 }
 
-.div__info p {
+.info p {
     font-size: 24px;
     font-family: "Inder-Regular";
     max-width: 608px;
@@ -187,23 +217,23 @@ main {
 
     }
 
-    .div__menu {
+    .menu {
         margin-top: 50px;
         grid-area: menu;
     }
 
-    .div__menu ul {
+    .menu ul {
         display: flex;
         flex-direction: row;
         overflow-x: scroll;
         gap: 10px;
     }
 
-    .div__menu ul>li {
+    .menu ul>li {
         flex: 1;
     }
 
-    .div__menu ul li a {
+    .menu ul li a {
         text-align: center;
         display: block;
         width: 150px;
@@ -214,7 +244,7 @@ main {
         background-color: var(--color-4);
     }
 
-    .div__product {
+    .product {
         padding-top: 0;
         grid-area: pre;
         display: flex;
@@ -236,16 +266,16 @@ main {
         width: 100%;
     }
 
-    .div__ice-cream {
+    .ice-cream {
         position: relative;
         width: 100%;
         height: auto;
         max-width: 100vh;
     }
 
-    .div__ice-cream img:nth-child(1),
-    .div__ice-cream img:nth-child(2),
-    .div__ice-cream img:nth-child(3) {
+    .ice-cream img:nth-child(1),
+    .ice-cream img:nth-child(2),
+    .ice-cream img:nth-child(3) {
         transform: rotate(0deg);
         position: absolute;
         overflow: hidden;
@@ -256,7 +286,7 @@ main {
         z-index: -10;
     }
 
-    .div__ice-cream img:nth-child(1) {
+    .ice-cream img:nth-child(1) {
         transform: rotate(19deg);
         width: 514px;
         height: 500px;
@@ -265,7 +295,7 @@ main {
         top: -186px;
     }
 
-    .div__ice-cream img:nth-child(2) {
+    .ice-cream img:nth-child(2) {
         transform: rotate(19deg);
         width: 514px;
         height: 500px;
@@ -274,7 +304,7 @@ main {
         top: -190px;
     }
 
-    .div__ice-cream img:nth-child(3) {
+    .ice-cream img:nth-child(3) {
         transform: rotate(19deg);
         width: 514px;
         height: 500px;
@@ -283,7 +313,7 @@ main {
         top: -186px;
     }
 
-    .div__info {
+    .info {
         grid-area: info;
         margin-top: 700px;
         align-items: center;
@@ -293,29 +323,29 @@ main {
         margin: 5%;
     }
 
-    .div__info h1,
-    .div__info span,
-    .div__info p {
+    .info h1,
+    .info span,
+    .info p {
         color: #fff;
     }
 
-    .div__info h1 {
+    .info h1 {
         font-size: 50px;
         font-family: "Inter_28pt-Bold";
     }
 
-    .div__info span {
+    .info span {
         font-size: 32px;
         font-family: "Lalezar-Regular";
 
     }
 
-    .div__info p {
+    .info p {
         font-size: 24px;
         font-family: "Inder-Regular";
     }
 
-    .div__info a {
+    .info a {
         font-size: 24px;
         width: 100%;
     }

@@ -4,3 +4,18 @@
     --color-2: #000000;
     --color-3: #BDD37F;
 }
+
+@font-face {
+    font-family: "inter";
+    src: url(../storage/font/Inter/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: "seaweed";
+    src: url(../storage/font/Inter/Seaweed_Script/SeaweedScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: "lalezar";
+    src: url(../storage/font/lalezar/Lalezar/Lalezar-Regular.ttf);
+}
