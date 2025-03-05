@@ -64,8 +64,11 @@ main {
 .logo {
     grid-area: logo;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: -710px;
+    top: 40px;
+    
 }
 
 .logo img {
@@ -76,6 +79,8 @@ main {
 }
 
 .menu {
+    font-family: "inter";
+    font-size: 28px;
     grid-area: menu;
     display: flex;
     justify-content: center;
@@ -164,29 +169,32 @@ main {
     color: var(--color-1);
     margin-right: 67px;
     position: relative;
+    margin-top: 130px;
 }
 
 .info h1 {
-    font-size: 70px;
-    font-family: "Inter_28pt-Bold";
+    font-size: 60px;
+    font-family: "Inter";
     color: var(--color-1);
+    margin-right: 40px;
 }
 
 .info span {
-    font-size: 32px;
-    font-family: "Lalezar-Regular";
+    font-size: 30px;
+    font-family: "lalezar";
     color: var(--color-1);
 }
 
 .info p {
-    font-size: 24px;
-    font-family: "Inder-Regular";
+    font-size: 22px;
+    font-family: "inter";
     max-width: 608px;
+    font-weight: normal;
 }
 
 .bottom__button {
     align-self: flex-end;
-    margin-right: 12vh;
+    margin-right: 9vh;
 }
 
 .btn {
@@ -198,7 +206,7 @@ main {
     border-radius: 10px;
     margin-top: 91px;
     display: inline-block;
-    font-family: "Inder-Regular";
+    font-family: "Inter";
 }
 
 
@@ -216,6 +224,8 @@ main {
             "info info info";
 
     }
+
+
 
     .menu {
         margin-top: 50px;
