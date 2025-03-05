@@ -35,7 +35,7 @@ main {
     position: absolute;
     text-align: center;
     margin-top: -65%;
-    margin-left: 45%;
+    margin-left: 50%;
     line-height: 45px;
 }
 
@@ -68,7 +68,7 @@ main {
     align-items: flex-start;
     margin-left: -710px;
     top: 40px;
-    
+
 }
 
 .logo img {
@@ -132,32 +132,34 @@ main {
 .ice-cream img {
     position: absolute;
     object-fit: contain;
-    max-width: 50%;
+    max-width: 1000%;
 }
 
 .ice-cream img:nth-child(1) {
-    transform: rotate(32.69deg);
-    width: 447px;
-    height: 753px;
+    transform: rotate(10deg);
+    width: 600px;
+    height: 900px;
     z-index: 5;
-    left: -141px;
-    top: -373px;
+    left: -220px;
+    top: -390px;
 }
 
 .ice-cream img:nth-child(2) {
-    transform: rotate(57.18deg);
-    width: 447px;
-    height: 832px;
+    transform: rotate(70deg);
+    width: 600px;
+    height: 900px;
     z-index: 10;
-    left: -52px;
-    top: -272px;
+    left: -70px;
+    top: -210px;
 }
 
 .ice-cream img:nth-child(3) {
-    transform: rotate(85.74deg);
-    z-index: 5;
-    left: 21px;
-    top: 0px;
+    transform: rotate(40deg);
+    width: 600px;
+    height: 900px;
+    z-index: 10;
+    left: -130px;
+    top: -295px;
 }
 
 .info {
